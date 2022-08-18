@@ -1,0 +1,92 @@
+/* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+#map {
+    float:left;
+    height: 50%;
+    width: 50%;
+}
+
+#map2 {
+    float:right;
+    height: 50%;
+    width: 50%
+}
+
+#confirm {
+    width:100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: white;
+    border-width: 0;
+    font-size: 25px;
+    font-family: "Open Sans", sans-serif;
+    color: black;
+}
+
+#confirm:hover {
+    background-color: rgba(0, 160, 0, 0.6);
+    cursor: pointer;
+    color: white;
+
+}
+
+.score {
+    font-family: "Open Sans", sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    display: block;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#score {
+    padding-left: 23px;
+}
+
+#total_score {
+    padding-left: 5px;
+}
+
+h1 {
+    padding-left:45%;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+}
+
+/* Optional: Makes the sample page fill the window. */
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    align-content: flex-start;
+}
+
+.gm-iv-container {
+    display: none;
+}
+
+a[href^="http://maps.google.com/maps"],a[href^="https://maps.google.com/maps"] {
+    display: none !important;
+}
+.gmnoprint a,.gmnoprint span,.gm-style-cc {
+    display: none;
+}
+
+#floating-panel {
+    position: absolute;
+    top: 10px;
+    left: 25%;
+    z-index: 5;
+    background-color: #fff;
+    padding: 5px;
+    border: 1px solid #999;
+    text-align: center;
+    font-family: "Roboto", "sans-serif";
+    line-height: 30px;
+    padding-left: 10px;
+}
+
+#floating-panel {
+    margin-left: -100px;
+}

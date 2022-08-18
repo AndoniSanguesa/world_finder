@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Andoni Sanguesa">
+    <meta name="description" content="free geoguesser clone">
+    <title>Portfolio Test</title>
+    <link href="styles/style.css" rel="stylesheet">
+
+    <!-- links the relevant Open Sans fonts from Google Fonts. weights: 300, 600, 800 --->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+    <!-- calls the main JS script that adds more user interaction -->
+    <script src="scripts/index.js" defer></script>
+</head>
+<body>
+    <h1>GeoGuesser</h1>
+    <div id="map"></div>
+    <script
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtMBSCiR9NlYr_9mOXzVeTMwVI45aAnKs&callback=initMap&libraries=&v=beta"
+            async
+    ></script>
+    <div id="map2"></div>
+    <script
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtMBSCiR9NlYr_9mOXzVeTMwVI45aAnKs&callback=initMap&libraries=&v=beta"
+            async
+    ></script>
+    <button id="confirm">
+        Confirm
+    </button>
+    <label class="score" id="score">Distance: <label id="dist">0</label> km</label>
+    <div></div>
+    <label class="score" id="total_score">Total Score: <label id="score_cnt">0</label></label>
+</body>
+</html>
